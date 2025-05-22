@@ -44,9 +44,8 @@
       margin: 0 auto 2rem;
     }
     .categories {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
       padding: 2rem 1rem;
     }
@@ -55,8 +54,7 @@
       border-radius: 1rem;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
       padding: 1.5rem;
-      max-width: 250px;
-      width: 100%;
+      text-align: center;
     }
     .category h2 {
       font-size: 1.4rem;
@@ -67,16 +65,19 @@
       color: #555;
     }
     .category a {
-      display: block;
-      margin-top: 0.5rem;
+      display: inline-block;
+      margin: 0.3rem 0.4rem;
       font-size: 0.85rem;
       color: #e07a5f;
       text-decoration: none;
     }
+    .category a:hover {
+      text-decoration: underline;
+    }
     .category img {
       max-width: 100%;
       border-radius: 0.5rem;
-      margin-top: 0.5rem;
+      margin: 0.5rem 0;
     }
     footer {
       font-size: 0.8rem;
@@ -96,44 +97,42 @@
 
   <section class="categories">
     <div class="category">
-      <h2>Cafetière</h2>
       <img src="https://via.placeholder.com/200x150" alt="Cafetière durable">
-      <p>Le modèle sélectionné pour sa durabilité, sa réparabilité et son efficacité énergétique.</p>
-      <a href="#">Acheter (lien affilié AWIN)</a>
-      <a href="#">Tuto réparation</a>
-      <a href="#">Discussion forum</a>
-      <a href="#">Indice de réparabilité</a>
+      <h2>Cafetière</h2>
+      <p>Modèle sélectionné pour sa durabilité, sa réparabilité et son efficacité énergétique.</p>
+      <a href="#">Acheter</a>
+      <a href="#">Tuto</a>
+      <a href="#">Forum</a>
+      <a href="#">Indice réparabilité</a>
     </div>
     <div class="category">
-      <h2>Lave-linge</h2>
-      <h2>Exemple pour test : LG F14X76BMST</h2>
       <img src="https://via.placeholder.com/200x150" alt="Lave-linge durable">
-      <p>Appareil recommandé avec l’indice de durabilité le plus élevé et faible consommation d’eau.</p>
+      <h2>Lave-linge</h2>
+      <p>Indice de durabilité élevé, faible consommation d’eau.</p>
       <previewbox-link href="https://www.auchan.fr/lg-lave-linge-hublot-11kg-1360trs-min-f14x76bmst/pr-401cdf7c-790d-4400-a5b9-70061a2319be"></previewbox-link>
-      <a href="https://www.auchan.fr/lg-lave-linge-hublot-11kg-1360trs-min-f14x76bmst/pr-401cdf7c-790d-4400-a5b9-70061a2319be">Acheter (lien affilié AWIN)</a>
-      <a href="https://pieces-detachees.sogedis.fr/marque-LG-reference-F14R35WHS.htm">Pièces détachées</a>
-      <a href="#">Discussion forum</a>
-      <a href="https://www.lg.com/content/dam/channel/wcms/fr/irn/F14X76BMST_Outil_de_calcul_Lave-linge_Durabilit%C3%A9.pdf">Indice de réparabilité : 9.6 / 10</a>
+      <a href="https://www.auchan.fr/lg-lave-linge-hublot-11kg-1360trs-min-f14x76bmst/pr-401cdf7c-790d-4400-a5b9-70061a2319be">Acheter</a>
+      <a href="https://pieces-detachees.sogedis.fr/marque-LG-reference-F14R35WHS.htm">Pièces</a>
+      <a href="#">Forum</a>
+      <a href="https://www.lg.com/content/dam/channel/wcms/fr/irn/F14X76BMST_Outil_de_calcul_Lave-linge_Durabilit%C3%A9.pdf">Indice : 9.6/10</a>
     </div>
     <div class="category">
-      <h2>Lampe</h2>
       <img src="https://via.placeholder.com/200x150" alt="Lampe LED durable">
-      <p>Lampe LED basse conso, remplaçable, conçue pour durer des années.</p>
-      <a href="#">Acheter (lien affilié AWIN)</a>
-      <a href="#">Tuto réparation</a>
-      <a href="#">Discussion forum</a>
-      <a href="#">Indice de réparabilité</a>
+      <h2>Lampe</h2>
+      <p>LED basse conso, remplaçable, conçue pour durer des années.</p>
+      <a href="#">Acheter</a>
+      <a href="#">Tuto</a>
+      <a href="#">Forum</a>
+      <a href="#">Indice réparabilité</a>
     </div>
     <div class="category">
-      <h2>Smartphone</h2>
-      <h2>Fairphone 5</h2>
       <img src="https://via.placeholder.com/200x150" alt="Smartphone modulaire">
-      <p>Smartphone modulaire et réparable avec longue durée de vie logicielle.</p>
+      <h2>Smartphone</h2>
+      <p>Fairphone 5 : modulaire, réparable, durable logiciellement.</p>
       <previewbox-link href="https://shop.fairphone.com/fr/fairphone-5"></previewbox-link>
-      <a href="https://shop.fairphone.com/fr/fairphone-5">Acheter (lien affilié AWIN)</a>
-      <a href="#">Tuto réparation</a>
-      <a href="#">Discussion forum</a>
-      <a href="#">Indice de réparabilité</a>
+      <a href="https://shop.fairphone.com/fr/fairphone-5">Acheter</a>
+      <a href="#">Tuto</a>
+      <a href="#">Forum</a>
+      <a href="#">Indice réparabilité</a>
     </div>
   </section>
 
