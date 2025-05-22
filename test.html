@@ -16,6 +16,16 @@
       padding: 2rem 1rem;
     }
     .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo img {
+      max-width: 120px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    .logo-text {
       font-size: 4rem;
       font-weight: bold;
       letter-spacing: 0.1rem;
@@ -55,16 +65,6 @@
       font-size: 0.95rem;
       color: #555;
     }
-    .category a {
-      display: block;
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-      color: #007B7F;
-      text-decoration: none;
-    }
-    .category a:hover {
-      text-decoration: underline;
-    }
     footer {
       font-size: 0.8rem;
       color: #888;
@@ -73,7 +73,10 @@
 </head>
 <body>
   <header>
-    <div class="logo">SOLYLOS</div>
+    <div class="logo">
+      <img src="logo.png" alt="Logo Solylos">
+      <div class="logo-text">SOLYLOS</div>
+    </div>
     <h1>Un seul produit. Le meilleur.</h1>
     <p class="description">Solylos sélectionne l’objet le plus durable de chaque catégorie, pour un choix simple, éthique et éclairé.</p>
   </header>
@@ -82,30 +85,22 @@
     <div class="category">
       <h2>Cafetière</h2>
       <p>Le modèle sélectionné pour sa durabilité, sa réparabilité et son efficacité énergétique.</p>
-      <a href="#">Voir le produit</a>
     </div>
     <div class="category">
       <h2>Lave-linge</h2>
       <p>Appareil recommandé avec l’indice de durabilité le plus élevé et faible consommation d’eau.</p>
-      <a href="https://www.lg.com/fr/lavage/lave-linge/f14r15whs-lave-linge-standards/" target="_blank">Voir le produit</a>
-      <a href="#">Voir le tutoriel de réparation</a>
-      <a href="#">Forum Discourse</a>
-      <a href="#">Documents indice de réparabilité</a>
     </div>
     <div class="category">
       <h2>Lampe</h2>
       <p>Lampe LED basse conso, remplaçable, conçue pour durer des années.</p>
-      <a href="#">Voir le produit</a>
     </div>
     <div class="category">
       <h2>Smartphone</h2>
       <p>Smartphone modulaire et réparable avec longue durée de vie logicielle.</p>
-      <a href="#">Voir le produit</a>
     </div>
     <div class="category">
       <h2>Batterie externe</h2>
       <p>Compacte, à cellule remplaçable, avec matériaux recyclables.</p>
-      <a href="#">Voir le produit</a>
     </div>
   </section>
 
